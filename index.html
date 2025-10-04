@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .download-section {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Download</h1>
+    
+    <h2>Resume</h2>
+    <p>My detailed resume with all certifications, projects, and work experience is available for download.</p>
+    
+    <hr>
+
+    <div class="download-section">
+        <h3>PDF Version</h3>
+        <p>Complete professional resume</p>
+        <!-- Yahan ACTUAL PDF file ka naam daalen -->
+        <a href="Sahil_Sayyed_Resume.pdf" class="btn" download>
+            Download PDF
+        </a>
+    </div>
+
+    <div class="download-section">
+        <h3>Online Version</h3>
+        <p>View in browser</p>
+        <!-- Yahan koi online link daalen ya fir remove karen -->
+        <a href="Sahil_Sayyed_Resume.pdf" class="btn" target="_blank">
+            View Online
+        </a>
+    </div>
+
+    <a href="index.html" class="back-link">Back to Home</a>
+</body>
+</html>
