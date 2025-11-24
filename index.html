@@ -1,67 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahil Sayyed - Cloud Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        /* Modern CSS Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
-        }
 
-        :root {
-            --bg-primary: #000010;
-            --bg-secondary: #0a0a1a;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0ff;
-            --accent: #00ccff;
-            --accent-glow: rgba(0, 204, 255, 0.5);
-            --neon-pink: #ff00ff;
-            --neon-blue: #0066ff;
-            --neon-purple: #9933ff;
-            --card-bg: rgba(17, 17, 34, 0.9);
-            --border: rgba(255, 255, 255, 0.1);
-            --instagram: #E4405F;
-        }
-
-        body {
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
-            overflow-x: hidden;
-            min-height: 100vh;
-        }
-
-        /* Milkyway Background */
-        .milkyway {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -2;
-            background: 
-                radial-gradient(ellipse at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 20%, rgba(255, 119, 198, 0.2) 0%, transparent 50%),
-                radial-gradient(ellipse at 40% 80%, rgba(119, 198, 255, 0.25) 0%, transparent 50%),
-                linear-gradient(135deg, #000010 0%, #0a0a1a 50%, #000010 100%);
-        }
-
-        .galaxy-star {
-            position: absolute;
-            background: white;
-            border-radius: 50%;
-            animation: galaxyTwinkle var(--duration) infinite ease-in-out;
-        }
-
-        .galaxy-cluster {
-            position: absolute;
-            width: 300px;
+         
             height: 300px;
             background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
             border-radius: 50%;
@@ -756,53 +694,7 @@
                 star.style.animationDelay = `${delay}s`;
                 star.style.setProperty('--duration', `${duration}s`);
                 
-                milkyway.appendChild(star);
-            }
-            
-            // Create galaxy clusters
-            for (let i = 0; i < 5; i++) {
-                const cluster = document.createElement('div');
-                cluster.className = 'galaxy-cluster';
-                
-                cluster.style.left = `${Math.random() * 80 + 10}%`;
-                cluster.style.top = `${Math.random() * 80 + 10}%`;
-                cluster.style.animationDelay = `${Math.random() * 20}s`;
-                
-                milkyway.appendChild(cluster);
-            }
-        }
-
-        // Page navigation
-        function showPage(pageId) {
-            // Hide all pages
-            document.querySelectorAll('.page-container').forEach(page => {
-                page.classList.remove('active');
-            });
-            
-            // Show selected page
-            document.getElementById(pageId).classList.add('active');
-            
-            return false;
-        }
-
-        // Show info box
-        function showInfo() {
-            const infoBox = document.getElementById('infoBox');
-            infoBox.classList.toggle('show');
-        }
-
-        // Initialize
-        document.addEventListener('DOMContentLoaded', () => {
-            createMilkyway();
-            
-            // Add click effect to name
-            document.querySelector('.main-name').addEventListener('click', showInfo);
-        });
-
-        // Add keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                showPage('home');
+                milkyway.
             }
         });
     </script>
